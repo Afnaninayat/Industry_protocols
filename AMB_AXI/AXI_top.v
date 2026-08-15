@@ -1,0 +1,80 @@
+
+module AXI_top(
+input wire ACLK,
+input wire ARESETN,
+input wire START_READ,
+input wire START_WRITE,
+input wire [31:0] address,
+input wire [31:0] W_data,
+output wire [31:0] RDATA,
+output wire [1:0] RRESP,
+output wire [1:0] BRESP
+);
+
+wire [31:0] ARADDR;
+wire ARVALID;
+wire ARREADY;
+wire RREADY;
+wire RVALID;
+
+wire [31:0] AWADDR;
+wire AWVALID;
+wire AWREADY;
+
+wire [31:0] WDATA;
+wire [3:0] WSTRB;
+wire WVALID;
+wire WREADY;
+
+wire BREADY;
+wire BVALID;
+
+AXI_master master(
+.ACLK(ACLK),
+.ARESETN(ARESETN),
+.START_READ(START_READ),
+.START_WRITE(START_WRITE),
+.address(address),
+.W_data(W_data),
+.ARREADY(ARREADY),
+.RDATA(RDATA),
+.RRESP(RRESP),
+.RVALID(RVALID),
+.AWREADY(AWREADY),
+.WREADY(WREADY),
+.BRESP(BRESP),
+.BVALID(BVALID),
+.ARADDR(ARADDR),
+.ARVALID(ARVALID),
+.RREADY(RREADY),
+.AWADDR(AWADDR),
+.AWVALID(AWVALID),
+.WDATA(WDATA),
+.WSTRB(WSTRB),
+.WVALID(WVALID),
+.BREADY(BREADY)
+);
+
+AXI_slave slave(
+.ACLK(ACLK),
+.ARESETN(ARESETN),
+.ARADDR(ARADDR),
+.ARVALID(ARVALID),
+.RREADY(RREADY),
+.AWADDR(AWADDR),
+.AWVALID(AWVALID),
+.WDATA(WDATA),
+.WSTRB(WSTRB),
+.WVALID(WVALID),
+.BREADY(BREADY),
+.ARREADY(ARREADY),
+.RDATA(RDATA),
+.RRESP(RRESP),
+.RVALID(RVALID),
+.AWREADY(AWREADY),
+.WREADY(WREADY),
+.BRESP(BRESP),
+.BVALID(BVALID)
+);
+
+endmodule
