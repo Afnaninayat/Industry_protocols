@@ -1,0 +1,29 @@
+# =========================================================
+# EDA / Simulation Generated Files
+# =========================================================
+
+# QuestaSim / ModelSim
+work/
+transcript
+*.wlf
+*.log
+*.mpf
+*.mti
+*.cr.mti
+
+# Backup files
+*.bak
+*~
+
+# Waveform / Simulation Dumps
+*.vcd
+*.fst
+*.vpd
+
+# =========================================================
+# Unwanted / Buggy Lab Files
+# =========================================================
+
+lab02 buggy files/
+github_link.txt
+

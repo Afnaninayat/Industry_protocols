@@ -1,31 +1,20 @@
 # AMBA Protocol Implementations & Verification
 
-A modular repository featuring register-transfer level (RTL) implementations, gate-level schematic designs, and behavioral verification testbenches for ARM® AMBA industry-standard on-chip communication protocols (**APB** and **AXI**).
+A practical RTL design and verification repository focused on **ARM AMBA industry-standard on-chip communication protocols**.
 
-Designed as a digital IC design and verification showcase, this repository demonstrates bus transaction workflows, multi-channel handshaking mechanisms, peripheral interfacing, and waveform analysis using industry-standard EDA tools.
+This repository contains **Verilog RTL implementations, simulation environments, digital circuit designs, testbenches, lab documentation, and waveform analysis** for APB, AXI, and AHB protocols.
 
----
-
-## 📑 Table of Contents
-- [Protocols Covered](#-protocols-covered)
-- [Repository Structure](#-repository-structure)
-- [Protocol Specifications](#-protocol-specifications)
-  - [1. AMBA APB (Advanced Peripheral Bus)](#1-amba-apb-advanced-peripheral-bus)
-  - [2. AMBA AXI (Advanced eXtensible Interface)](#2-amba-axi-advanced-extensible-interface)
-- [EDA Tools & Technologies](#️-eda-tools--technologies)
-- [Simulation & Build Instructions](#-simulation--build-instructions)
-- [Verification Strategy](#-verification-strategy)
-- [Roadmap](#-roadmap)
-- [Author & Contact](#-author--contact)
+The project is developed to build hands-on experience in **RTL Design, Digital IC Design, Bus Protocols, Simulation, and Hardware Verification**.
 
 ---
 
 ## 📚 Protocols Covered
 
-| Protocol | Full Name | Specification Focus | Implementation | Verification Suite |
-| :--- | :--- | :--- | :--- | :--- |
-| **APB** | Advanced Peripheral Bus | Low-power, unpipelined peripheral bus | Verilog HDL / Logisim | Directed Testbenches, Waveform PDFs |
-| **AXI** | Advanced eXtensible Interface | High-performance, concurrent 5-channel bus | Synthesizable Verilog RTL | Modular Testbench (`tb_axi.v`), Lab Reports |
+| Protocol | Full Name | Focus | Implementation | Verification |
+|:---|:---|:---|:---|:---|
+| **APB** | Advanced Peripheral Bus | Low-bandwidth peripheral communication | Verilog / Logisim | RTL Simulation & Circuit Analysis |
+| **AXI** | Advanced eXtensible Interface | High-performance SoC communication | Verilog RTL | Testbench & Simulation |
+| **AHB** | Advanced High-performance Bus | High-performance system bus | Verilog RTL | Testbench & Simulation |
 
 ---
 
@@ -33,34 +22,52 @@ Designed as a digital IC design and verification showcase, this repository demon
 
 ```text
 Industry_protocol/
+│
 ├── AMBA_APB/
 │   └── RTL & Simulation Files/
+│       │
 │       ├── Task - 1/
-│       │   └── APB/                     # Baseline APB Master/Slave RTL & Waveforms
-│       │       ├── *.v
-│       │       └── Screenshots.pdf
+│       │   └── APB/
+│       │       ├── Verilog RTL Files
+│       │       └── Screenshots
+│       │
 │       ├── Task - 2/
-│       │   └── Counter_slave/           # Register-mapped Counter Slave peripheral
-│       │       ├── *.v
-│       │       └── Screenshots.pdf
-│       └── Task - 3/                    # Gate-level schematic implementation
+│       │   └── Counter_slave/
+│       │       ├── Verilog RTL Files
+│       │       └── Screenshots
+│       │
+│       └── Task - 3/
 │           ├── Master_Slave_APB.circ
-│           └── Screenshots.pdf
+│           └── Screenshots
 │
 ├── AMBA_AXI/
-│   ├── RTL/                             # Synthesizable AXI master/slave infrastructure
+│   │
+│   ├── RTL/
 │   │   ├── axi_master.v
 │   │   ├── axi_slave.v
 │   │   ├── axi_top.v
 │   │   └── tb_axi.v
+│   │
 │   └── PDF/
-│       └── Lab 03 (AMBA-AXI).pdf        # Detailed protocol & verification analysis
+│       └── Lab 03 (AMBA-AXI).pdf
 │
-└── README.md
+├── AMBA_AHB/
+│   │
+│   ├── RTL/
+│   │   ├── AHB_Master.v
+│   │   ├── AHB_Decoder.v
+│   │   ├── AHB_MUX.v
+│   │   ├── AHB_Slave_1.v
+│   │   ├── AHB_Slave_2.v
+│   │   ├── AHB_TOP.v
+│   │   └── tb_AHB.v
+│   │
+│   ├── AMBA AHB Lab - Tasks.pdf
+│   └── readme.md
+│
+├── .gitignore
+└── README.md ```
 
----
-
-```
 ## 👨‍💻 Author
 
 **Afnan Inayat**
