@@ -57,3 +57,17 @@ Industry_protocol/
 │       └── Lab 03 (AMBA-AXI).pdf        # Detailed protocol & verification analysis
 │
 └── README.md
+
+---
+
+## 👨‍💻 Author
+
+**Afnan Inayat**
+
+Computer Science | Digital IC Design & Verification
+
+Passionate about **RTL Design, Digital IC Design, Hardware Verification, and Industry-Standard Communication Protocols**.
+
+This repository represents practical work and continuous learning in **industry-standard hardware protocols and digital design verification**.
+
+⭐ If you find this repository useful, consider giving it a **star**.
