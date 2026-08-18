@@ -1,0 +1,25 @@
+/home/kalii/f4pga-examples/xc7/APB/master.v {1 {vlog -work work -vopt -stats=none /home/kalii/f4pga-examples/xc7/APB/master.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module master
+
+Top level modules:
+	master
+
+} {} {}} /home/kalii/f4pga-examples/xc7/APB/tb_apb_top.v {1 {vlog -work work -vopt -stats=none /home/kalii/f4pga-examples/xc7/APB/tb_apb_top.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module master
+-- Compiling module slave
+-- Compiling module apb_top
+-- Compiling module tb_abp_top
+
+Top level modules:
+	tb_abp_top
+
+} {} {}} /home/kalii/f4pga-examples/xc7/APB/slave.v {1 {vlog -work work -vopt -stats=none /home/kalii/f4pga-examples/xc7/APB/slave.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module slave
+
+Top level modules:
+	slave
+
+} {} {}}

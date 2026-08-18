@@ -1,0 +1,54 @@
+{
+    "/home/kalii/f4pga-examples/xc7/counter_slave/counter_slave.v": {
+        "synth": 2952489080
+    },
+    "/home/kalii/f4pga-examples/xc7/counter_slave/build/arty_35": {
+        "synth": 0,
+        "place": 0
+    },
+    "/home/kalii/f4pga-examples/xc7/counter_slave/arty.xdc": {
+        "synth": 130639394
+    },
+    "/home/kalii/f4pga-examples/xc7/counter_slave/build/arty_35/counter_slave.eblif": {
+        "fasm": 3499560351,
+        "pack": 3499560351,
+        "place": 3499560351,
+        "place_constraints": 3499560351,
+        "ioplace": 3499560351,
+        "route": 3499560351
+    },
+    "/home/kalii/f4pga-examples/xc7/counter_slave/build/arty_35/xc7a50t_test_sdc.sdc": {
+        "pack": 1,
+        "place": 1,
+        "route": 1,
+        "fasm": 1
+    },
+    "/home/kalii/f4pga-examples/xc7/counter_slave/build/arty_35/counter_slave.net": {
+        "fasm": 1922523240,
+        "place_constraints": 1922523240,
+        "ioplace": 1922523240
+    },
+    "/home/kalii/f4pga-examples/xc7/counter_slave/build/arty_35/counter_slave.ioplace": {
+        "place_constraints": 3104939740,
+        "place": 3104939740
+    },
+    "/home/kalii/f4pga-examples/xc7/counter_slave/build/arty_35/counter_slave.preplace": {
+        "place": 3104939740
+    },
+    "/home/kalii/f4pga-examples/xc7/counter_slave/build/arty_35/counter_slave.place": {
+        "fasm": 558124422,
+        "route": 558124422
+    },
+    "/home/kalii/f4pga-examples/xc7/counter_slave/build/arty_35/counter_slave.route": {
+        "fasm": 3158134842
+    },
+    "/home/kalii/f4pga-examples/xc7/counter_slave/build/arty_35/counter_slave_fasm_extra.fasm": {
+        "fasm": 1
+    },
+    "/home/kalii/f4pga-examples/xc7/counter_slave/build/arty_35/counter_slave.fasm": {
+        "bitstream": 1111356886
+    },
+    "/home/kalii/f4pga-examples/xc7/counter_slave/build/arty_35/counter_slave.bit": {
+        "__target": 744910536
+    }
+}
