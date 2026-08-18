@@ -63,6 +63,7 @@ The Master initiates read and write transactions. The Decoder determines which s
                     │Peripheral│
                     └──────────┘
 
+
 # Task 4 — High-Speed and Low-Speed Peripherals in SoC
 
 ## Overview
